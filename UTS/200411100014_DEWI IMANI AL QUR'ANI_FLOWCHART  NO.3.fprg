@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-20 08.01.01 PM"/>
+        <attribute name="created" value="QXN1cztMQVBUT1AtVDNMMzAwQzU7MjAyMC0xMS0yMDswNy4wMi41MyBQTTsyNjQ0"/>
+        <attribute name="edited" value="QXN1cztMQVBUT1AtVDNMMzAwQzU7MjAyMC0xMS0yMDswOC4wMS4wMSBQTTsxOzI3NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, i" type="String" array="False" size=""/>
+            <declare name="temp" type="String" array="False" size=""/>
+            <output expression="&quot;masukkan kalimat&quot;" newline="True"/>
+            <input variable="data"/>
+            <output expression="&quot;masukkan huruf yang dicari&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="temp" expression="0"/>
+            <while expression="i = 0 to len(data)">
+                <if expression="data.upper()[i]==a or data(i)==a">
+                    <then>
+                        <assign variable="temp" expression="temp+1"/>
+                        <output expression="output &quot;hurus&quot; &amp; data.upper()[i]&amp;&quot;atau huruf&quot;&amp;data(i)&amp; &quot;ke&quot; &amp;temp &amp; &quot;=&quot; &amp; i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO G40 AMD"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 12.07.26 PM"/>
+        <attribute name="created" value="TEVOT1ZPIEc0MCBBTUQ7IExFTk9WTzsgMjAyMC0xMS0xMDsgMDY6Mzc6NDIgQU07IDI3MzM="/>
+        <attribute name="edited" value="TEVOT1ZPIEc0MCBBTUQ7IExFTk9WTzsgMjAyMC0xMS0xMDsgMTA6NDI6NTIgQU07IDI3MjU="/>
+        <attribute name="edited" value="QXN1cztMQVBUT1AtVDNMMzAwQzU7MjAyMC0xMS0xMDsxMi4wNy4yNiBQTTsxOzI3NTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu" type="Integer" array="False" size=""/>
+            <declare name="luas, phi, jarijari, panjang, lebar, alas, tinggi" type="Real" array="False" size=""/>
+            <assign variable="menu" expression="false"/>
+            <while expression="not menu">
+                <output expression="&quot;menu =&#13;&#10;1. luas lingkaran&#13;&#10;2. luas persegi panjang&#13;&#10;3. luas segitiga&#13;&#10;4. keluar&quot;" newline="True"/>
+                <input variable="menu"/>
+                <if expression="menu=1">
+                    <then>
+                        <output expression="&quot;masukan jari jari&quot;" newline="True"/>
+                        <input variable="jari"/>
+                        <assign variable="phi" expression="3.14"/>
+                        <assign variable="luas" expression="phi*jari*jari"/>
+                        <output expression="luas" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="menu=2">
+                            <then>
+                                <output expression="&quot;masukan panjang&quot;" newline="True"/>
+                                <input variable="panjang"/>
+                                <output expression="&quot;masukan lebar&quot;" newline="True"/>
+                                <input variable="lebar"/>
+                                <assign variable="luas" expression="panjang*lebar"/>
+                                <output expression="luas" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="menu=3">
+                                    <then>
+                                        <output expression="&quot;masukan alas&quot;" newline="True"/>
+                                        <input variable="alas"/>
+                                        <output expression="&quot;masukan tinggi&quot;" newline="True"/>
+                                        <input variable="tinggi"/>
+                                        <assign variable="luas" expression="1/2*alas*tinggi"/>
+                                        <output expression="luas" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="menu=4">
+                                            <then>
+                                                <output expression="&quot;terimakasih&quot;" newline="True"/>
+                                                <assign variable="mulai" expression="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;maaf piilihan tidak ada&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

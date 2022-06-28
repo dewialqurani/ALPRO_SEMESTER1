@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO G40 AMD"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 11.26.50 AM"/>
+        <attribute name="created" value="TEVOT1ZPIEc0MCBBTUQ7IExFTk9WTzsgMjAyMC0xMS0xMDsgMTA6MTU6MjQgQU07IDI3MjQ="/>
+        <attribute name="edited" value="TEVOT1ZPIEc0MCBBTUQ7IExFTk9WTzsgMjAyMC0xMS0xMDsgMTA6MzA6NTkgQU07IDI3Mjk="/>
+        <attribute name="edited" value="QXN1cztMQVBUT1AtVDNMMzAwQzU7MjAyMC0xMS0xMDsxMS4yNi41MCBBTTsxOzI3MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sukuawal, beda, total, a, number, totalnilai" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukan suku awal = &quot;" newline="True"/>
+            <input variable="sukuawal"/>
+            <output expression="&quot;masukan beda&quot;" newline="True"/>
+            <input variable="beda"/>
+            <output expression="&quot;masukan total_nilai = &quot;" newline="True"/>
+            <input variable="total"/>
+            <assign variable="a" expression="sukuawal"/>
+            <assign variable="number" expression="0"/>
+            <assign variable="totalnilai" expression="a"/>
+            <while expression="totalnilai&lt;=total">
+                <assign variable="number" expression="number+1"/>
+                <output expression="&quot;suku ke-&quot;&amp;number&amp;&quot;=&quot;&amp;a&amp;&quot;total=&quot;&amp;totalnilai" newline="True"/>
+                <assign variable="a" expression="a+beda"/>
+                <assign variable="totalnilai" expression="totalnilai+a"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

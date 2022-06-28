@@ -1,0 +1,11 @@
+print('Create Mat 1')
+Matriks1=createMat2D(2,3)
+print('Create Mat 2')
+Matriks2=createMat2D(2,3)
+print('Create Mat 3')
+Matriks3=createMat2D(3,2)
+hasilJumlah=addMat(Matriks1,Matriks2)
+dispMat2D(Matriks1, 'Matrik 1 = ')
+dispMat2D(Matriks2, 'Matrik 2 = ')
+dispMat2D(hasilJumlah, 'Matrik 1 + Matrik 2 = ')
+   

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 11.48.53 AM"/>
+        <attribute name="created" value="QVNVUztERVNLVE9QLVNSU1JLOFE7MjAyMC0xMS0xMDswOS41Mi4zNiBBTTsyNjc4"/>
+        <attribute name="edited" value="QVNVUztERVNLVE9QLVNSU1JLOFE7MjAyMC0xMS0xMDsxMS40OC41MyBBTTs2OzI3ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mulai" type="Boolean" array="False" size=""/>
+            <declare name="luas, jari, phi, panjang, lebar, alas, tinggi" type="Real" array="False" size=""/>
+            <declare name="pilih, angka, pembagi" type="Integer" array="False" size=""/>
+            <assign variable="mulai" expression="false"/>
+            <while expression="not mulai">
+                <output expression="&quot;1. luas lingkaran 2. luas persegi panjang 3. luas segitiga 4. keluar&quot;" newline="True"/>
+                <input variable="pilih"/>
+                <if expression="pilih = 1">
+                    <then>
+                        <output expression="&quot;MASUKKAN JARI-JARI&quot;" newline="True"/>
+                        <input variable="JARI"/>
+                        <assign variable="PHI" expression="3.14"/>
+                        <assign variable="LUAS" expression="PHI * JARI * JARI"/>
+                        <output expression="LUAS" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="pilih = 2">
+                            <then>
+                                <output expression="&quot;MASUKKAN PANJANG&quot;" newline="True"/>
+                                <input variable="PANJANG"/>
+                                <output expression="&quot;MASUKKAN LEBAR&quot;" newline="True"/>
+                                <input variable="LEBAR"/>
+                                <assign variable="LUAS" expression="PANJANG * LEBAR"/>
+                                <output expression="LUAS" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="pilih = 3">
+                                    <then>
+                                        <output expression="&quot;MASUKKAN ALAS&quot;" newline="True"/>
+                                        <input variable="ALAS"/>
+                                        <output expression="&quot;MASUKKAN TINGGI&quot;" newline="True"/>
+                                        <input variable="TINGGI"/>
+                                        <assign variable="LUAS" expression="(ALAS * TINGGI) / 2"/>
+                                        <output expression="LUAS" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="PILIH = 4">
+                                            <then>
+                                                <output expression="&quot;TERIMAKASIH&quot;" newline="True"/>
+                                                <assign variable="mulai" expression="true"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;MAAF PILIHAN ANDA TIDAK ADA&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;LAGI? \n1. ya \n2. tidak&quot;" newline="True"/>
+                <input variable="pilih"/>
+                <if expression="pilih = 1">
+                    <then>
+                        <output expression="&quot;1. luas lingkaran 2. luas persegi panjang 3. luas segitiga 4. keluar&quot;" newline="True"/>
+                        <input variable="pilih"/>
+                    </then>
+                    <else>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

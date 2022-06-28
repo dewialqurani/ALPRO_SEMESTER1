@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO G40 AMD"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 10:42:52 AM"/>
+        <attribute name="created" value="TEVOT1ZPIEc0MCBBTUQ7IExFTk9WTzsgMjAyMC0xMS0xMDsgMDY6Mzc6NDIgQU07IDI3MzM="/>
+        <attribute name="edited" value="TEVOT1ZPIEc0MCBBTUQ7IExFTk9WTzsgMjAyMC0xMS0xMDsgMTA6NDI6NTIgQU07IDI3MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mulai" type="Boolean" array="False" size=""/>
+            <declare name="luas, phi, panjang, lebar, alas, tinggi" type="Real" array="False" size=""/>
+            <declare name="pilih, angka, pembagi" type="Integer" array="False" size=""/>
+            <assign variable="mulai" expression="false"/>
+            <while expression="not mulai">
+                <output expression="&quot;1. luas lingkaran 2. luas persegi 3. luas segitiga 4. keluar&quot;"/>
+                <input variable="pilih"/>
+                <if expression="pilih=1">
+                    <then>
+                        <output expression="&quot;masukan jari jari&quot;"/>
+                        <input variable="jari"/>
+                        <assign variable="phi" expression="3.14"/>
+                        <assign variable="luas" expression="phi*jari*jari"/>
+                        <output expression="luas"/>
+                    </then>
+                    <else>
+                        <if expression="pilih=2">
+                            <then>
+                                <output expression="&quot;masukan panjang&quot;"/>
+                                <input variable="panjang"/>
+                                <output expression="&quot;masukan lebar&quot;"/>
+                                <input variable="lebar"/>
+                                <assign variable="luas" expression="panjang*lebar"/>
+                                <output expression="luas"/>
+                            </then>
+                            <else>
+                                <if expression="pilih=3">
+                                    <then>
+                                        <output expression="&quot;masukan alas&quot;"/>
+                                        <input variable="alas"/>
+                                        <output expression="&quot;masukan tinggi&quot;"/>
+                                        <input variable="tinggi"/>
+                                        <assign variable="luas" expression="(alas*tinggi)/2"/>
+                                        <output expression="luas"/>
+                                    </then>
+                                    <else>
+                                        <if expression="pilih=4">
+                                            <then>
+                                                <output expression="&quot;terimakasih&quot;"/>
+                                                <assign variable="mulai" expression="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;maaf piilihan tidak ada&quot;"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

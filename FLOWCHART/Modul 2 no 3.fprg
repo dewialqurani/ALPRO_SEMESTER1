@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 10.53.08 AM"/>
+        <attribute name="created" value="QVNVUztERVNLVE9QLVNSU1JLOFE7MjAyMC0xMS0xMDswOS4zOC40MyBBTTsyNjgw"/>
+        <attribute name="edited" value="QVNVUztERVNLVE9QLVNSU1JLOFE7MjAyMC0xMS0xMDsxMC41My4wOCBBTTsyOzI3Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan angka&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a &gt; 1">
+                <then>
+                    <for variable="i" start="2" end="a -1" direction="inc" step="1">
+                        <if expression="a % i = 0">
+                            <then>
+                                <output expression="&quot;Bukan prima&quot;" newline="True"/>
+                                <breakpoint/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="&quot;Prima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bukan Prima&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
